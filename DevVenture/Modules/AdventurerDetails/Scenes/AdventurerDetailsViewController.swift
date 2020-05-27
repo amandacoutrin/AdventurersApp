@@ -28,7 +28,7 @@ class AdventurerDetailsViewController: UIViewController, AdventurerDetailsDispla
     private lazy var infoDetailsView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         view.layer.masksToBounds = false
         view.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         view.layer.shadowOffset = CGSize(width: 0, height: 5)
@@ -42,8 +42,8 @@ class AdventurerDetailsViewController: UIViewController, AdventurerDetailsDispla
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = .boldSystemFont(ofSize: 16)
-        label.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        label.font = .boldSystemFont(ofSize: 24)
+        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         label.numberOfLines = 0
         return label
     }()
@@ -53,8 +53,8 @@ class AdventurerDetailsViewController: UIViewController, AdventurerDetailsDispla
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 14)
-        label.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        label.font = .systemFont(ofSize: 16)
+        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
         label.numberOfLines = 0
         return label
     }()

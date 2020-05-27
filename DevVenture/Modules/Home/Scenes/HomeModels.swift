@@ -11,7 +11,7 @@ import UIKit
 enum Home {
     enum Model {
         struct Request {
-            let url = URL(string: "https://gist.githubusercontent.com/amandacoutrin/052853920631c3ebbd26f6630e88cb87/raw/8677a8ddc3b979ee7fbf5e85c246d33fe32930cc/adventurers")
+            let url = URL(string: "https://gist.githubusercontent.com/amandacoutrin/052853920631c3ebbd26f6630e88cb87/raw/1718e7687d26d28dca3e543aa6b9639951c62af8/adventurers")
         }
         
         struct Response: Codable {

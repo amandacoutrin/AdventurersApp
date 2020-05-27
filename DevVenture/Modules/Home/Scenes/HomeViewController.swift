@@ -49,7 +49,7 @@ class HomeViewController: UIViewController, HomeDisplayLogic {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 14)
+        label.font = .systemFont(ofSize: 24)
         label.text = ""
         label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8893675086)
         label.numberOfLines = 0
@@ -60,18 +60,27 @@ class HomeViewController: UIViewController, HomeDisplayLogic {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 14)
+        label.font = .systemFont(ofSize: 16)
         label.text = ""
         label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8893675086)
         label.numberOfLines = 0
         return label
     }()
     
-    private lazy var adventurerDetailsButton: CustomButton = {
-        let btn = CustomButton()
+    private lazy var adventurerDetailsButton: UIButton = {
+        let btn = UIButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.setTitle("Details", for: .normal)
         btn.addTarget(self, action: #selector(didTapDetailsButton), for: .touchUpInside)
+        btn.clipsToBounds = true
+        btn.layer.cornerRadius = 10
+        btn.backgroundColor = #colorLiteral(red: 0.9071986079, green: 0.1055118218, blue: 0.4809141755, alpha: 1)
+        btn.layer.masksToBounds = false
+        btn.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        btn.layer.shadowOffset = CGSize(width: 0, height: 3)
+        btn.layer.shadowOpacity = 0.5
+        btn.layer.shadowRadius = 5
+        
         return btn
     }()
     
@@ -94,7 +103,7 @@ class HomeViewController: UIViewController, HomeDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.566681338, green: 0.4721335827, blue: 0.824347648, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.2058427334, green: 0.1900666058, blue: 0.2487862706, alpha: 1)
         interactor?.loadScreenValues()
         addComponents()
         addConstraints()
@@ -165,11 +174,11 @@ class HomeViewController: UIViewController, HomeDisplayLogic {
     }
     
     private func addbtnNextConstraint() {
-        let top = adventurerDetailsButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 50)
         let width = adventurerDetailsButton.widthAnchor.constraint(equalToConstant: 200)
         let height = adventurerDetailsButton.heightAnchor.constraint(equalToConstant: 50)
         let xPosition = adventurerDetailsButton.centerXAnchor.constraint(equalTo: nameLabel.centerXAnchor, constant: 0)
-        NSLayoutConstraint.activate([top, width, height, xPosition])
+        let bottom = adventurerDetailsButton.bottomAnchor.constraint(equalTo: adventurerDetailsView.bottomAnchor, constant: -20)
+        NSLayoutConstraint.activate([width, height, xPosition, bottom])
     }
     
     // MARK: - HomeDisplayLogic

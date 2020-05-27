@@ -10,7 +10,6 @@
 		211AD5F22479E86900260D83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AD5F12479E86900260D83 /* AppDelegate.swift */; };
 		211AD5FB2479E86B00260D83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211AD5FA2479E86B00260D83 /* Assets.xcassets */; };
 		211AD5FE2479E86B00260D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211AD5FC2479E86B00260D83 /* LaunchScreen.storyboard */; };
-		211AD6092479EE2500260D83 /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211AD6082479EE2500260D83 /* Main.xib */; };
 		211AD6132479F3AC00260D83 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AD60D2479F3AC00260D83 /* MainRouter.swift */; };
 		211AD6152479F3AC00260D83 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AD60F2479F3AC00260D83 /* MainViewController.swift */; };
 		211AD620247A049B00260D83 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AD61A247A049B00260D83 /* HomePresenter.swift */; };
@@ -27,8 +26,6 @@
 		213CCD4B247B33CA004F55C1 /* AdventurerDetailsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213CCD45247B33CA004F55C1 /* AdventurerDetailsModels.swift */; };
 		213CCD4C247B33CA004F55C1 /* AdventurerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213CCD46247B33CA004F55C1 /* AdventurerDetailsViewController.swift */; };
 		213CCD4D247B33CA004F55C1 /* AdventurerDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213CCD47247B33CA004F55C1 /* AdventurerDetailsInteractor.swift */; };
-		213CCD50247B3CFA004F55C1 /* Custom+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213CCD4F247B3CFA004F55C1 /* Custom+UIButton.swift */; };
-		213CCD52247C15F4004F55C1 /* AdventurerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213CCD51247C15F4004F55C1 /* AdventurerDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +34,6 @@
 		211AD5FA2479E86B00260D83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		211AD5FD2479E86B00260D83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		211AD5FF2479E86B00260D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		211AD6082479EE2500260D83 /* Main.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
 		211AD60D2479F3AC00260D83 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		211AD60F2479F3AC00260D83 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		211AD61A247A049B00260D83 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -54,8 +50,6 @@
 		213CCD45247B33CA004F55C1 /* AdventurerDetailsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventurerDetailsModels.swift; sourceTree = "<group>"; };
 		213CCD46247B33CA004F55C1 /* AdventurerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventurerDetailsViewController.swift; sourceTree = "<group>"; };
 		213CCD47247B33CA004F55C1 /* AdventurerDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventurerDetailsInteractor.swift; sourceTree = "<group>"; };
-		213CCD4F247B3CFA004F55C1 /* Custom+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+UIButton.swift"; sourceTree = "<group>"; };
-		213CCD51247C15F4004F55C1 /* AdventurerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdventurerDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +82,6 @@
 		211AD5F02479E86900260D83 /* DevVenture */ = {
 			isa = PBXGroup;
 			children = (
-				213CCD4E247B3C7D004F55C1 /* Extensions */,
 				211AD627247AFB8100260D83 /* Components */,
 				211AD626247AFB7300260D83 /* SupportingFiles */,
 				211AD6052479EDAA00260D83 /* Modules */,
@@ -117,19 +110,10 @@
 		211AD6072479EDC700260D83 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				211AD60A2479EFD800260D83 /* View */,
 				211AD60D2479F3AC00260D83 /* MainRouter.swift */,
 				211AD60F2479F3AC00260D83 /* MainViewController.swift */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		211AD60A2479EFD800260D83 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				211AD6082479EE2500260D83 /* Main.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		211AD617247A042800260D83 /* Home */ = {
@@ -143,7 +127,6 @@
 		211AD618247A043700260D83 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				211AD619247A044100260D83 /* View */,
 				211AD61A247A049B00260D83 /* HomePresenter.swift */,
 				211AD61B247A049B00260D83 /* HomeWorker.swift */,
 				211AD61C247A049B00260D83 /* HomeRouter.swift */,
@@ -152,14 +135,6 @@
 				211AD61F247A049B00260D83 /* HomeInteractor.swift */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		211AD619247A044100260D83 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				213CCD51247C15F4004F55C1 /* AdventurerDetailsView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		211AD626247AFB7300260D83 /* SupportingFiles */ = {
@@ -227,14 +202,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		213CCD4E247B3C7D004F55C1 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				213CCD4F247B3CFA004F55C1 /* Custom+UIButton.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				211AD5FE2479E86B00260D83 /* LaunchScreen.storyboard in Resources */,
-				211AD6092479EE2500260D83 /* Main.xib in Resources */,
 				211AD5FB2479E86B00260D83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,8 +283,6 @@
 				211AD622247A049B00260D83 /* HomeRouter.swift in Sources */,
 				211AD62C247AFBFB00260D83 /* PhotoCardMenuCell.swift in Sources */,
 				211AD5F22479E86900260D83 /* AppDelegate.swift in Sources */,
-				213CCD50247B3CFA004F55C1 /* Custom+UIButton.swift in Sources */,
-				213CCD52247C15F4004F55C1 /* AdventurerDetailsView.swift in Sources */,
 				211AD624247A049B00260D83 /* HomeViewController.swift in Sources */,
 				213CCD4D247B33CA004F55C1 /* AdventurerDetailsInteractor.swift in Sources */,
 				213CCD4C247B33CA004F55C1 /* AdventurerDetailsViewController.swift in Sources */,
@@ -460,7 +424,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DevVenture/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -468,6 +433,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.devventure.DevVenture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -477,7 +443,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DevVenture/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -485,6 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.devventure.DevVenture;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

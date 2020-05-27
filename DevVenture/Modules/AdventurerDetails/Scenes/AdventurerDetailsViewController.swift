@@ -43,7 +43,7 @@ class AdventurerDetailsViewController: UIViewController, AdventurerDetailsDispla
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.font = .boldSystemFont(ofSize: 24)
-        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         label.numberOfLines = 0
         return label
     }()
@@ -54,7 +54,7 @@ class AdventurerDetailsViewController: UIViewController, AdventurerDetailsDispla
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .left
         label.font = .systemFont(ofSize: 16)
-        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        label.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         label.numberOfLines = 0
         return label
     }()
@@ -73,10 +73,14 @@ class AdventurerDetailsViewController: UIViewController, AdventurerDetailsDispla
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.566681338, green: 0.4721335827, blue: 0.824347648, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.2702302635, green: 0.08020982891, blue: 0.4322296679, alpha: 1)
         addComponents()
         addConstraints()
         interactor?.loadSocialNetworking()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // MARK: Setup

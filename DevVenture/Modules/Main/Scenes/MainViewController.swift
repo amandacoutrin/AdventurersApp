@@ -22,7 +22,7 @@ class MainViewController: UIViewController {
     }()
     
     private lazy var backagroudImage: UIImageView = {
-        let imageName = "banckground.png"
+        let imageName = "background.png"
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -77,21 +77,23 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
-        UIView.animate(withDuration: 0.5, animations: {
-            self.launchScreenImage.alpha = 0.0
+        UIView.animate(withDuration: 2.0, animations: {
+            self.launchScreenImage.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
         }, completion: { _ in
-            UIView.animate(withDuration: 0.2, animations: {
-                self.launchScreenImage.alpha = 0.2
+            UIView.animate(withDuration: 2.0, animations: {
+                self.launchScreenImage.alpha = 0.1
             }, completion: { [weak self] _ in
                 self?.goToHome()
             })
         })
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super .viewDidAppear(true)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // MARK: - Private Functions
@@ -123,7 +125,7 @@ class MainViewController: UIViewController {
         let xPosition = launchScreenImage.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor, constant: kXPosition)
         let yPosition = launchScreenImage.centerYAnchor.constraint(equalTo: safeArea.centerYAnchor, constant: kYPosition)
         let height = launchScreenImage.heightAnchor.constraint(equalToConstant: 128)
-        let width = launchScreenImage.widthAnchor.constraint(equalToConstant: 240)
+        let width = launchScreenImage.widthAnchor.constraint(equalToConstant: 180)
         NSLayoutConstraint.activate([xPosition, yPosition, height, width])
     }
     
